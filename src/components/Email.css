@@ -1,0 +1,19 @@
+.email {
+	position: fixed;
+	color: var(--light-slate);
+	width: 40px;
+	left: auto;
+	right: 20px;
+	bottom: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.email__contents::after {
+  content: "";
+  border-left: 1px solid;
+  min-height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
