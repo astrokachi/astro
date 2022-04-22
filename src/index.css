@@ -68,6 +68,10 @@ body::-webkit-scrollbar-thumb {
 	border-radius: 10px;
 }
 
+*{
+	font-weight: normal;
+}
+
 body {
 	margin: 0px;
 	width: 100%;
@@ -88,4 +92,38 @@ body {
 a {
 	text-decoration: none;
 	color: unset;
+}
+
+h2,
+h1,
+h3,
+p,
+h4,
+h5 {
+	margin: 0;
+}
+
+::-moz-selection {
+	/* Code for Firefox */
+	color: var(--white);
+	background: var(--light-navy);
+	transition: var(--easing);
+	transition-duration: 200ms;
+}
+
+::selection {
+	color: var(--white);
+	background: var(--light-navy);
+	transition: var(--easing);
+	transition-duration: 200ms;
+}
+
+
+::marker{
+	content: '▹';
+	color: var(--green);
+}
+
+ul{
+	padding-left: 15px;
 }

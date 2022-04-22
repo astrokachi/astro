@@ -1,19 +1,45 @@
 .email {
-	position: fixed;
-	color: var(--light-slate);
 	width: 40px;
-	left: auto;
-	right: 20px;
+	position: fixed;
 	bottom: 0px;
-  display: flex;
-  flex-direction: column;
+	left: auto;
+	right: 40px;
+	z-index: 10;
+	color: var(--light-slate);
 }
 
-.email__contents::after {
-  content: "";
-  border-left: 1px solid;
-  min-height: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15px;
+.email--line {
+	content: "";
+	border-left: 1px solid;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+}
+
+.email__contents {
+	display: flex;
+	gap: 7em;
+	flex-direction: column;
+	-webkit-box-align: center;
+	align-items: center;
+	position: relative;
+	width: max-content !important;
+}
+
+.email__contents > a {
+	margin: 20px auto;
+	padding: 10px;
+	font-family: var(--font-mono);
+	font-size: var(--fz-xxs);
+	line-height: var(--fz-lg);
+	letter-spacing: 0.2em;
+	-webkit-writing-mode: vertical-rl;
+	writing-mode: vertical-rl;
+	width: max-content;
+}
+
+.email__anchor:hover {
+	color: var(--green);
+	transition: var(--transition);
 }

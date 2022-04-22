@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import About from "./components/About";
 import Email from "./components/Email";
 // import {} from 'react-router-dom'
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Socials from "./components/Socials";
+import Work from "./components/Work";
 
 function App() {
 	const [position, setPosition] = useState(0);
@@ -27,10 +29,12 @@ function App() {
 		<div className="App">
 			<Header position={position} />
 			<Socials />
+			<Email />
 			<div className="contain">
 				<Hero />
+				<About />
+				<Work />
 			</div>
-			<Email />
 		</div>
 	);
 }

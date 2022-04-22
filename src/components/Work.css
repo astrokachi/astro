@@ -1,0 +1,104 @@
+.work__boxes {
+	width: 100%;
+	height: 26vw;
+	position: relative;
+	margin-top: 40px;
+}
+
+.work__image {
+	height: 100%;
+	width: 100%;
+	background: url("../../public/netflix (2).PNG") no-repeat;
+	background-size: cover;
+	opacity: 0.1;
+	border-radius: 5px;
+	position: absolute;
+	transition: var(--transition);
+	cursor: pointer;
+	float: left;
+	z-index: -1;
+}
+
+.work__imageCover {
+	height: 100%;
+	width: 60%;
+	background: var(--green-tint);
+	position: absolute;
+	border-radius: 5px;
+	inset: 0px;
+	z-index: 1;
+	opacity: 0.8;
+	mix-blend-mode: screen;
+}
+
+.work__image:hover {
+	opacity: 1;
+}
+
+.work__text {
+	display: flex;
+	position: relative;
+	height: 90%;
+	float: right;
+	flex-direction: column;
+	justify-content: center;
+	align-items: right;
+}
+
+.work__mainHeading {
+	font-family: var(--font-mono);
+	color: var(--green);
+	font-size: var(--fz-sm);
+	margin-left: auto;
+	width: max-content;
+}
+
+.work__projectName {
+	padding-top: 7px;
+	color: var(--lightest-slate);
+	font-size: clamp(26px, 5vw, 28px);
+	margin-left: auto;
+	width: max-content;
+}
+
+.reuse {
+	position: relative;
+	align-items: center;
+}
+
+.work__chatBox {
+	text-align: right;
+	margin-left: auto;
+	width: max-content;
+	max-width: 400px;
+	padding: 25px;
+	box-shadow: 0 10px 30px -15px var(--navy-shadow);
+	background-color: var(--light-navy);
+	opacity: 1;
+	color: var(--light-slate);
+	position: relative;
+	z-index: 2;
+	visibility: visible;
+	font-size: clamp(var(--fz-md), 9vw, var(--fz-sm));
+}
+
+.work__tech {
+	display: flex;
+	justify-content: end;
+	margin-top: 20px;
+}
+
+.p {
+	font-size: var(--fz-sm);
+	margin-left: 15px;
+	font-family: var(--font-mono);
+}
+
+.work__icons {
+	display: flex;
+	gap: 20px;
+	margin-top: 20px;
+	width: max-content;
+	margin-left: auto;
+	padding-left: 20px;
+}
