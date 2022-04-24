@@ -7,7 +7,7 @@ const Email = () => {
 			<div className="email__contents">
 				<a
 					className="email__anchor"
-					href="https://mailto:astrokachi@gmail.com"
+					href="mailto:astrokachi@gmail.com subject=subject text"
 					target={"_blank"}
 					rel="noreferrer"
 				>

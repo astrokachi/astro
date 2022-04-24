@@ -1,8 +1,27 @@
-.about {
+.about__container {
 	display: flex;
 	flex-direction: column;
 	padding: 10% 0;
 	font-weight: 400;
+	justify-items: space-around;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.about {
+	position: relative;
+	align-items: center;
+	height: 100vh;
+}
+
+@keyframes up {
+	from {
+		transform: translateY(100vh);
+	}
+	to {
+		transform: translateX(0vw);
+	}
 }
 
 .about__headerContainer {
@@ -58,4 +77,10 @@ li {
 	font-family: var(--fz-mono);
 	padding-left: 10px;
 	padding-bottom: 7px;
+}
+
+@media screen and (max-width: 770px) {
+	.about__listFlex {
+		max-width: 260px;
+	}
 }

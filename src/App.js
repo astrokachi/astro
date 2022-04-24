@@ -1,41 +1,50 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import About from "./components/About";
+import Contact from "./components/Contact";
 import Email from "./components/Email";
 // import {} from 'react-router-dom'
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Socials from "./components/Socials";
 import Work from "./components/Work";
+import { IoIosRocket } from "react-icons/io";
 
 function App() {
-	const [position, setPosition] = useState(0);
+	const [ham, setHam] = useState(false);
+	const [isloaded, setIsLoaded] = useState(false);
 
 	useEffect(() => {
-		window.addEventListener("scroll", handleScroll);
+		setIsLoaded(false);
+
+		setTimeout(() => {
+			setIsLoaded(true);
+			console.log("page is loaded");
+		}, 3000);
 	}, []);
 
-	const handleScroll = () => {
-		const position = window.pageYOffset;
-		if (position === 0) {
-			setPosition(false);
-		}
-		setPosition(position);
-		// console.log(position)
-	};
-
-	console.log(position);
 	return (
-		<div className="App">
-			<Header position={position} />
-			<Socials />
-			<Email />
-			<div className="contain">
-				<Hero />
-				<About />
-				<Work />
-			</div>
-		</div>
+		<>
+			{isloaded ? (
+				<div className={`app`}>
+					<Header ham={ham} setHam={setHam} />
+					<div onClick={() => setHam(false)}>
+						<div className={`contain ${ham ? "true" : ""}`}>
+							<Socials />
+							<Email />
+							<Hero />
+							<About />
+							<Work />
+							<Contact />
+						</div>
+					</div>{" "}
+				</div>
+			) : (
+				<div className="loading">
+					<IoIosRocket className="sv" />
+				</div>
+			)}
+		</>
 	);
 }
 

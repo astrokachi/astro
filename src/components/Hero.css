@@ -3,6 +3,19 @@
 	flex-direction: column;
 	height: 100vh;
 	justify-content: center;
+	animation: up;
+	animation-duration: 3s;
+
+}
+
+
+@keyframes up {
+	from{
+		transform: translateY(40vh);
+	}
+	to{
+		transform: translateX(0vw);
+	}
 }
 
 .hero__text1 {
@@ -46,8 +59,12 @@
 	cursor: pointer;
 	width: max-content;
 	font-size: var(--fz-md);
+	transition: var(--transition);
 }
 
 .hero__resumeButton:hover {
+
 	background: var(--lightest-navy);
+	box-shadow: 0 10px 30px -15px var(--navy-shadow);
+	transform: scale(1.07);
 }

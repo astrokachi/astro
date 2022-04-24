@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { IoIosRocket } from "react-icons/io";
 import "./Header.css";
 
-const Header = (position) => {
+const Header = ({ ham, setHam }) => {
+	useEffect(() => {
+		if (ham) document.body.style.overflow = "hidden";
+		else {
+			document.body.style.overflow = "";
+		}
+	});
 	return (
 		<div className="header">
 			<div className="header__container">
@@ -10,33 +16,33 @@ const Header = (position) => {
 					<h2 className="header__initials">astro</h2>
 					<IoIosRocket className="header__rocket" />
 				</div>
-				<div className={`header__nav`}>
-					<div className="header__hamburger">
-						<div className="hamLine a"></div>
-						<div className="hamLine b"></div>
-						<div className="hamLine c"></div>
-					
+				<div className={`blur ${ham && "ham"}`}>
+					<div className="head__">
+						<div className="header__">
+							<h3 className={`header__text`}>
+								<a href="#about" onClick={() => setHam(false)}>
+									<span>01. </span>About
+								</a>
+							</h3>
+							<h3 className="header__text">
+								<a href="#work" onClick={() => setHam(false)}>
+									<span>02. </span>Work
+								</a>
+							</h3>
+							<h3 className="header__text">
+								<a href="#contact" onClick={() => setHam(false)}>
+									<span>03. </span>Contact
+								</a>
+							</h3>
+						</div>
 					</div>
-					<h3 className={"header__text"}>
-						<a href="#about">
-							<span>01 </span>About
-						</a>
-					</h3>
-					{/* <h3 className="header__text">
-						<a href="#experience">
-							<span>02 </span>Experience
-						</a>
-					</h3> */}
-					<h3 className="header__text">
-						<a href="#work">
-							<span>02 </span>Work
-						</a>
-					</h3>
-					<h3 className="header__text">
-						<a href="#contact">
-							<span>03 </span>Contact
-						</a>
-					</h3>
+				</div>
+				<div className={`header__nav`} onClick={() => setHam(!ham)}>
+					<div className="header__hamburger">
+						<span className={`hamLine a ${ham && "ham"}`}></span>
+						<span className={`hamLine b ${ham && "ham"}`}></span>
+						<span className={`hamLine c ${ham && "ham"}`}></span>
+					</div>
 				</div>
 			</div>
 		</div>

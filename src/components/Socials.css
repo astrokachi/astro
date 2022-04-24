@@ -27,8 +27,6 @@ a {
 	width: 20px;
 }
 
-
-
 .socials__height {
 	height: 50px;
 	margin-left: auto;
@@ -43,6 +41,30 @@ a {
 
 .svg:hover {
 	padding-top: 15px;
-  color: var(--green);
+	color: var(--green);
 	/* padding-bottom: 25px; */
+}
+
+@media screen and (max-width: 770px) {
+	.socials__container::after {
+		display: none;
+	}
+
+	.socials__container {
+		display: flex;
+		flex-direction: row;
+		gap: 2em;
+	}
+
+	.socials {
+		position: absolute;
+		bottom: 100px;
+		left: 50%;
+		transform: translateX(-50%);
+		text-align: center;
+		justify-content: center;
+		color: var(--light-slate);
+		width: max-content;
+	
+	}
 }

@@ -39,7 +39,13 @@
 	width: max-content;
 }
 
-.email__anchor:hover {
-	color: var(--green);
+.email__anchor{
 	transition: var(--transition);
 }
+
+.email__anchor:hover {
+	color: var(--green);
+
+	margin-bottom: 30px;
+}
+
