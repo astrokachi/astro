@@ -183,12 +183,12 @@ div> a{
 
 .work__tech {
 	display: flex;
-	justify-content: end;
+	justify-content: flex-end;
 	margin-top: 20px;
 }
 .work__techInverse {
 	display: flex;
-	justify-content: start;
+	justify-content: flex-start;
 	margin-top: 20px;
 }
 
@@ -345,7 +345,7 @@ div> a{
 
 	.work__tech,
 	.work__techInverse {
-		justify-content: start;
+		justify-content: flex-start;
 		padding: 0 20px;
 		background: none;
 	}

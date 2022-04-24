@@ -21,12 +21,12 @@
 
 .header__container {
 	display: flex;
-	justify-content: end;
+	justify-content: flex-end;
 	width: 90%;
 	background: none;
 }
 
-.head__{
+.head__ {
 	background: none;
 }
 
@@ -163,7 +163,7 @@ a:hover {
 		height: 70px;
 		cursor: pointer;
 		background: none;
-		justify-content: end;
+		justify-content: flex-end;
 		margin-left: auto;
 	}
 
@@ -267,7 +267,6 @@ a:hover {
 		animation-direction: alternate;
 		align-items: center;
 		align-content: center;
-
 	}
 
 	.header__ {
@@ -279,16 +278,16 @@ a:hover {
 		margin-top: 10%;
 	}
 
-	h3 > a > span{
+	h3 > a > span {
 		display: block;
 		font-size: var(--fz-sm);
 		text-align: center;
 		margin-bottom: 10px;
 	}
 
-h3>a{
-	font-size: var(--fz-xl);
-}
+	h3 > a {
+		font-size: var(--fz-xl);
+	}
 
 	@keyframes slide {
 		from {
