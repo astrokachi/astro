@@ -46,7 +46,7 @@ const Work = () => {
 
 							<div className="work__icons">
 								<a
-									href="https://github.com/astrokachi/airbnb-clone"
+									href="https://github.com/astrokachi/netflix-clone"
 									target={"_blank"}
 									className="a"
 									rel="noreferrer"
