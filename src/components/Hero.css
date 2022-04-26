@@ -9,14 +9,14 @@
 }
 
 
-@keyframes up {
+/* @keyframes up {
 	from{
 		transform: translateY(40vh);
 	}
 	to{
 		transform: translateX(0vw);
 	}
-}
+} */
 
 .hero__text1 {
 	margin-top: 40px;

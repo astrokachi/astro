@@ -54,6 +54,10 @@ body::-webkit-scrollbar-thumb {
 	background-color: var(--navy);
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	margin: 0px;
 	width: 100%;

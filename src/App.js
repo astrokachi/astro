@@ -9,6 +9,7 @@ import Hero from "./components/Hero";
 import Socials from "./components/Socials";
 import Work from "./components/Work";
 import { IoIosRocket } from "react-icons/io";
+import Fade from "react-reveal/Fade";
 
 function App() {
 	const [ham, setHam] = useState(false);
@@ -33,9 +34,15 @@ function App() {
 							<Socials />
 							<Email />
 							<Hero />
-							<About />
-							<Work />
-							<Contact />
+							<Fade bottom>
+								<About />
+							</Fade>
+							<Fade bottom>
+								<Work />
+							</Fade>
+							<Fade bottom>
+								<Contact />
+							</Fade>
 						</div>
 					</div>{" "}
 				</div>
