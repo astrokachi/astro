@@ -64,7 +64,7 @@
 	font-size: 40px;
 	animation: rotate;
 	animation-duration: 4s;
-	animation-iteration-count: infinite;
+	animation-iteration-count: 2;
 	animation-timing-function: var(--easing);
 	animation-fill-mode: forwards;
 	animation-direction: alternate;

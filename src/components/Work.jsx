@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import "./Work.css";
 import { FiGithub } from "react-icons/fi";
@@ -15,9 +16,14 @@ const Work = () => {
 
 				<div className="reuse">
 					<div className="work__boxes">
-						<div className="work__imageCover">
+						<a
+							className="work__imageCover"
+							href="https://netflix-clone-3d3d3.web.app/"
+							target={"_blank"}
+							rel="noreferrer"
+						>
 							<div className="work__image a"></div>
-						</div>
+						</a>
 
 						<div className="work__text">
 							<header>
@@ -33,15 +39,26 @@ const Work = () => {
 							<div className="work__tech">
 								<p className="p">React</p>
 								<p className="p">Firebase</p>
+								<p className="p">Redux</p>
 								{/* <p className="p">Material UI</p> */}
 								{/* <p className="p">TMDB</p> */}
 							</div>
 
 							<div className="work__icons">
-								<a href="#c">
+								<a
+									href="https://github.com/astrokachi/airbnb-clone"
+									target={"_blank"}
+									className="a"
+									rel="noreferrer"
+								>
 									<FiGithub className="github" />
 								</a>
-								<a href="#c">
+								<a
+									href="https://netflix-clone-3d3d3.web.app/"
+									className="a"
+									target={"_blank"}
+									rel="noreferrer"
+								>
 									<VscLinkExternal className="link" />
 								</a>
 							</div>
@@ -51,9 +68,14 @@ const Work = () => {
 
 				<div className="reuse__inverse">
 					<div className="work__boxesInverse">
-						<div className="work__imageCoverInverse">
+						<a
+							className="work__imageCoverInverse"
+							target={"_blank"}
+							href="https://airbnb-clone-silk-one.vercel.app/"
+							rel="noreferrer"
+						>
 							<div className="work__imageInverse a"></div>
-						</div>
+						</a>
 
 						<div className="work__textInverse">
 							<header>
@@ -73,10 +95,19 @@ const Work = () => {
 							</div>
 
 							<div className="work__iconsInverse">
-								<a href="#cInverse">
+								<a
+									href="https://github.com/astrokachi/airbnb-clone"
+									className="ia"
+									target={"_blank"}
+									rel="noreferrer"
+								>
 									<FiGithub className="githubInverse" />
 								</a>
-								<a href="#cInverse">
+								<a
+									href="https://airbnb-clone-silk-one.vercel.app/"
+									className="ia"
+									target={"_blank"}
+								>
 									<VscLinkExternal className="linkInverse" />
 								</a>
 							</div>

@@ -257,6 +257,10 @@ div> a{
 	align-items: center;
 }
 
+.work__imageCover{
+	transition: none;
+} 
+
 @media screen and (max-width: 770px) {
 	.work__imageCover,
 	.work__imageCoverInverse {
