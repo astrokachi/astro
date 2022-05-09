@@ -114,6 +114,57 @@ const Work = () => {
 						</div>
 					</div>
 				</div>
+
+				<div className="reuse">
+					<div className="work__boxes">
+						<a
+							className="work__imageCover"
+							href="https://kachis-ecommerce-app.netlify.app/"
+							target={"_blank"}
+							rel="noreferrer"
+						>
+							<div className="work__image b"></div>
+						</a>
+
+						<div className="work__text">
+							<header>
+								<p className="work__mainHeading">Featured Project</p>
+								<p className="work__projectName">My E-commerce app</p>
+							</header>
+							<div className="work__chatBox">
+								A mock online store for purchasing furniture of all sorts. Login
+								with your email and password, choose the products you want to
+								buy and add them to your cart. View and edit your cart as you like.
+							</div>
+							<div className="work__tech">
+								<p className="p">React</p>
+								<p className="p">Firebase</p>
+								<p className="p">Redux</p>
+								{/* <p className="p">Material UI</p> */}
+								{/* <p className="p">TMDB</p> */}
+							</div>
+
+							<div className="work__icons">
+								<a
+									href="https://github.com/astrokachi/clothing-store"
+									target={"_blank"}
+									className="a"
+									rel="noreferrer"
+								>
+									<FiGithub className="github" />
+								</a>
+								<a
+									href="https://kachis-ecommerce-app.netlify.app/"
+									className="a"
+									target={"_blank"}
+									rel="noreferrer"
+								>
+									<VscLinkExternal className="link" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	);

@@ -1,11 +1,11 @@
-.work{
+.work {
 	/* margin-top: 150px; */
 	min-height: max-content;
 	align-items: center;
 	position: relative;
 }
 
-.work__container{
+.work__container {
 	position: relative;
 	z-index: 1;
 }
@@ -17,10 +17,9 @@
 	max-height: 600px;
 	position: relative;
 	margin-top: 40px;
-	
 }
 
-div> a{
+div > a {
 	z-index: 10;
 }
 .work__boxesInverse {
@@ -43,8 +42,24 @@ div> a{
 	cursor: pointer;
 	float: left;
 	z-index: -1;
-	box-shadow: 0 10px 30px -15px var(--navy-shadow)
+	box-shadow: 0 10px 30px -15px var(--navy-shadow);
 }
+
+.work__image.b {
+	height: 100%;
+	width: 100%;
+	background: url("../../public/ecom.PNG") no-repeat;
+	background-size: cover;
+	opacity: 0.1;
+	border-radius: 5px;
+	position: absolute;
+	transition: var(--transition);
+	cursor: pointer;
+	float: left;
+	z-index: -1;
+	box-shadow: 0 10px 30px -15px var(--navy-shadow);
+}
+
 .work__imageInverse.a {
 	height: 100%;
 	width: 100%;
@@ -57,7 +72,6 @@ div> a{
 	cursor: pointer;
 	float: right;
 	z-index: -1;
-	
 }
 
 .work__imageCover {
@@ -69,7 +83,7 @@ div> a{
 	inset: 0px;
 	z-index: 1;
 	opacity: 0.8;
-	box-shadow: 0 10px 30px -15px var(--navy-shadow)
+	box-shadow: 0 10px 30px -15px var(--navy-shadow);
 }
 .work__imageCoverInverse {
 	height: 100%;
@@ -147,6 +161,10 @@ div> a{
 .reuse {
 	position: relative;
 	align-items: center;
+	margin-bottom: 136px;
+}
+
+.reuse__inverse {
 	margin-bottom: 136px;
 }
 
@@ -257,9 +275,9 @@ div> a{
 	align-items: center;
 }
 
-.work__imageCover{
+.work__imageCover {
 	transition: none;
-} 
+}
 
 @media screen and (max-width: 770px) {
 	.work__imageCover,
@@ -344,7 +362,6 @@ div> a{
 		text-align: left;
 		width: 80%;
 		padding: 0 20px;
-		
 	}
 
 	.work__tech,
@@ -354,7 +371,6 @@ div> a{
 		background: none;
 	}
 
-	
 	.p,
 	.pInverse {
 		margin-left: 0px;
@@ -371,7 +387,7 @@ div> a{
 		background: none;
 	}
 
-	.work__container{
+	.work__container {
 		z-index: 1;
 	}
 
@@ -381,12 +397,15 @@ div> a{
 		background: none;
 	}
 
-	.reuse{
+	.reuse,
+	.reuse__inverse {
 		margin-bottom: 50px;
 	}
 
-	.github, .link, .linkInverse, .githubInverse{
+	.github,
+	.link,
+	.linkInverse,
+	.githubInverse {
 		background: none;
 	}
-
 }
