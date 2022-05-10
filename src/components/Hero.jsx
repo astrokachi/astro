@@ -23,7 +23,7 @@ const Hero = () => {
 				</h4>
 				<a
 					className="hero__a"
-					href="https://drive.google.com/file/d/1l9vHT61aTm5g6OFUiIy4cjnOAmVVg-Pg/view?usp=sharing"
+					href="https://drive.google.com/file/d/1YZzwH7wrBK2BRcQUH2DTcYqdmAhPhAGW/view?usp=sharing"
 					target={"_blank"}
 					rel="noreferrer"
 				>
