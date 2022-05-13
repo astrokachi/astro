@@ -18,7 +18,7 @@ const Work = () => {
 					<div className="work__boxes">
 						<a
 							className="work__imageCover"
-							href="https://netflix-clone-3d3d3.web.app/"
+							href="https://kachis-movie-app.netlify.app/"
 							target={"_blank"}
 							rel="noreferrer"
 						>
@@ -54,7 +54,7 @@ const Work = () => {
 									<FiGithub className="github" />
 								</a>
 								<a
-									href="https://netflix-clone-3d3d3.web.app/"
+									href="https://kachis-movie-app.netlify.app/"
 									className="a"
 									target={"_blank"}
 									rel="noreferrer"
@@ -134,7 +134,8 @@ const Work = () => {
 							<div className="work__chatBox">
 								A mock online store for purchasing furniture of all sorts. Login
 								with your email and password, choose the products you want to
-								buy and add them to your cart. View and edit your cart as you like.
+								buy and add them to your cart. View and edit your cart as you
+								like.
 							</div>
 							<div className="work__tech">
 								<p className="p">React</p>
