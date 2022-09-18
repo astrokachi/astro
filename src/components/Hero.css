@@ -25,6 +25,7 @@
 	color: var(--green);
 	line-height: 1.1;
 	font-weight: 400;
+	padding-top: 40px;
 }
 
 .hero__name {
