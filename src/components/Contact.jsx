@@ -25,7 +25,7 @@ const Contact = () => {
 			</div>
 
 			<p className="contact__bottomText">
-				Inspiration from Brittany Chiang. Built by Kachi Ozoemena.
+				Theme by Brittany Chiang. Built by Kachi Ozoemena.
 			</p>
 		</div>
 	);
